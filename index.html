@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="conversor.css">
+    <title>Conversor de medidas</title>
+</head>
+
+<body class="body">
+
+    <div id="container">
+        <header>
+            <h1>Conversor de escalas termométricas</h1>
+        </header>
+
+        <div class="inicio">
+            <label>Converter <b>de:</b></label>
+            <select class="primeiraSeleçao">
+                <option value="" selected disabled>Selecione uma das opções...</option>
+                <option value="celsius">Celsius (C)</option>
+                <option value="kelvin">Kelvin (K)</option>
+                <option value="fahrenheit">Fahrenheit (F)</option>
+            </select>
+            
+            <label>Converter <b>para:</b></label>
+
+            <select class="segundaSeleçao">
+                <option value="" selected disabled>Selecione uma das opções...</option>
+                <option value="celsius">Celsius (C)</option>
+                <option value="kelvin">Kelvin (K)</option>
+                <option value="fahrenheit">Fahrenheit (F)</option>
+            </select>
+
+            <label id="inputTemperatura">Temperatura:</label>
+            <input type="number" placeholder="23" class="inputTemperatura">
+
+            <button type="submit" class="botao">Converter</button>
+            
+            <div class="resultado"></div>
+        </div>
+
+        <footer>
+            <div id="copyright">
+                <h1 class="desenvolvedor">Desenvolvido por <a href="https://www.linkedin.com/in/vinicius--bueno/" target="_blank" class="link">Vinícius Bueno</a></h1>
+            </div>
+        </footer>
+
+    </div>
+    <script src="./conversor.js"></script>
+</body>
+
+
+</html>
